@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Event Handling Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1> JavaScript Event Handling Class</h1>
+
+ 
+  <section>
+    <h2> Event Handling 🎈</h2>
+    <button id="clickBtn">Click Me</button>
+    <div id="hoverBox">Hover Over Me!</div>
+    <input type="text" id="keyInput" placeholder="Type something..." />
+    <button id="secretBtn">Double-Click Me</button>
+  </section>
+
+ 
+  <section>
+    <h2> Interactive Elements </h2>
+    <button id="colorBtn">I can change!! Try me</button>
+
+    <div id="gallery">
+      <img id="mainImage" src="pic3.jpg" alt="Main" width="300" />
+      <div class="thumbnails">
+        <img src="pic1.jpg" width="50" onclick="changeImage(this)" />
+        <img src="pic2.jpg" width="50" onclick="changeImage(this)" />
+      </div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab" onclick="openTab('tab1')">NETWORK DESIGN</div>
+      <div class="tab" onclick="openTab('tab2')">OOP</div>
+    </div>
+    <div id="tab1" class="tab-content">Design & Management</div>
+    <div id="tab2" class="tab-content" style="display:none;">C++ and Java</div>
+  </section>
+
+ 
+  <section>
+    <h2> Form Validation </h2>
+    <form id="myForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <span id="feedback"></span>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
